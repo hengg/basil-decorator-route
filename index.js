@@ -53,6 +53,7 @@ function RouteLoader(app, globalPrefix = '') {
       };
       // 注册路由
       methods.forEach((method) => router[method.toLowerCase()](globalPrefix + controllerPrefix + path, func));
+      console.log('route:',globalPrefix + controllerPrefix + path,'func:',controller.pathName+'.'+funcName);
     });
   });
 }

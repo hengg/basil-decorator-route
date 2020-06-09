@@ -2,7 +2,7 @@
 
 ### controller
 ```javascript
-import { Prefix, RequestMethods, Path } from 'egg-route-decorators';
+import { Prefix, RequestMethods, Path } from 'basil-decorator-route';
 
 @Prefix('/user')
 export default class UserController extends Controller {
